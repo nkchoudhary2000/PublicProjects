@@ -1,0 +1,14 @@
+[tool.black]
+line-length = 88
+target-version = ['py39']  # Change this to your Python version
+skip-string-normalization = false
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.venv
+  | build
+  | dist
+  | migrations
+)/
+'''
